@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .background{
+            height: 600px;
+            width: auto;
+            background-color: rgb(155, 154, 154);
+        }
+        .form{
+            height: 500px;
+            width: 370px;
+
+            background-color: white;
+            border-radius: 10px;
+
+            position: relative;
+            top: 20px;
+            left: 550px; 
+                       
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }        
+        .position{
+            height: 400px;
+            width: 300px;
+            text-align: center;
+        }
+        [title=info]{
+            color: rgb(121, 121, 121);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 250px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #eye{
+            color: rgb(121, 121, 121);
+            position: relative;
+            bottom: 24px;
+            left: 115px;
+        }
+        h1{
+            font-weight: lighter;
+            
+        }
+        .btn{
+            height: 50px;
+            width: 250px;
+            border-radius: 30px;
+            border: none;
+            background-image: linear-gradient(to right, rgb(94, 209, 255), rgb(78, 78, 255), rgb(241, 81, 255));
+            color: white;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 12px;
+            margin-top: 140px;
+            color: rgb(121, 121, 121);
+        }
+        a{
+          color: black;
+          text-decoration-line: none;  
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="form">
+            <div class="position">
+                <h1>Форма входа</h1>
+                <input type="text" placeholder="Email" title="info"><br>
+                <input type="password" placeholder="Password" title="info"><br>
+                <i class="fa fa-eye" aria-hidden="true" id="eye"></i><br>
+                <button class="btn">АВТОРИЗОВАТЬСЯ</button>
+                <p>
+                    У вас нет учетной записи? <a href="#">Зарегистрироваться</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
